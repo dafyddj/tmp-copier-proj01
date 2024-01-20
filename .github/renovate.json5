@@ -22,5 +22,12 @@
       "datasourceTemplate": "github-tags",
       "autoReplaceStringTemplate": "_commit: {{{currentValue}}} # __copier_update_needed {{{newValue}}}\n_src_path: gh:{{{depName}}}\n",
     }
-  ]
+  ],
+  "packageRules": [
+    {
+      "matchFileNames": [".copier-answers.yml"],
+      "automerge": true,
+      "extends": [":semanticCommitTypeAll(chore)"],
+    }
+  ],
 }
