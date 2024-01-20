@@ -1,5 +1,7 @@
 on:
   push:
+    paths:
+      - .copier-answers.yml
   workflow_dispatch:
 
 jobs:
