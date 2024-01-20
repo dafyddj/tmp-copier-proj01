@@ -27,6 +27,7 @@
     {
       "matchFileNames": [".copier-answers.yml"],
       "automerge": true,
+      "ignoreTests": true,
       "extends": [":semanticCommitTypeAll(chore)"],
     }
   ],
