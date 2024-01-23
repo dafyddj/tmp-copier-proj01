@@ -1,0 +1,4 @@
+<<<<<<< before updating
+=======
+4
+>>>>>>> after updating
