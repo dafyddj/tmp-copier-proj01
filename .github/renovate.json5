@@ -18,10 +18,10 @@
       "fileMatch": ["^.copier-answers.yml$"],
       "matchStrings": [
         "_commit: (?<currentValue>\\S+)\\n_src_path: gh:(?<depName>\\S+)\\n",
-        "_commit: (?<currentValue>\\S+) # __copier_update_needed \\S+\\n_src_path: gh:(?<depName>\\S+)\\n",
+        "_commit: (?<myValue>\\S+) # __copier_update_needed (?<currentValue>\\S+)\\n_src_path: gh:(?<depName>\\S+)\\n",
       ],
       "datasourceTemplate": "github-tags",
-      "autoReplaceStringTemplate": "_commit: {{{currentValue}}} # __copier_update_needed {{{newValue}}}\n_src_path: gh:{{{depName}}}\n",
+      "autoReplaceStringTemplate": "_commit: {{{myValue}}} # __copier_update_needed {{{newValue}}}\n_src_path: gh:{{{depName}}}\n",
     },
   ],
   "packageRules": [
